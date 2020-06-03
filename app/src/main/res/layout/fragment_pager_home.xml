@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/TwinkLing"
+
+        >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_marginBottom="@dimen/dp_15">
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_marginHorizontal="5dp"
+                    android:id="@+id/vp_looper"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:overScrollMode="never"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/looper_point_contatner"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="4dp"
+                    android:background="@drawable/item_title_bg" />
+
+                <TextView
+                    android:layout_marginHorizontal="@dimen/dp_5"
+                    android:id="@+id/tv_categorty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐"
+                    android:layout_marginVertical="@dimen/dp_10"
+                    android:textSize="@dimen/dp_15"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="4dp"
+                    android:background="@drawable/item_title_bg" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home_pager_content_lists"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</LinearLayout>

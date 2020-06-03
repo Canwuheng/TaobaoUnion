@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home" android:title="主页" android:icon="@mipmap/home_normal"/>
+    <item android:id="@+id/select" android:title="精选" android:icon="@mipmap/select_normal"/>
+    <item android:id="@+id/red_packet" android:title="优惠" android:icon="@mipmap/red_packet_normal"/>
+    <item android:id="@+id/search" android:title="搜索" android:icon="@mipmap/search_normal"/>
+</menu>
